@@ -1,0 +1,81 @@
+2024-11-04T20:13:59.376+05:30  INFO 6404 --- [Mini] [restartedMain] com.ashok.MiniApplication                : Starting MiniApplication using Java 17.0.10 with PID 6404 (C:\Users\ashok\OneDrive\Desktop\SpringBoot Pratices\Mini\Mini\target\classes started by ashok in C:\Users\ashok\OneDrive\Desktop\SpringBoot Pratices\Mini\Mini)
+2024-11-04T20:13:59.388+05:30  INFO 6404 --- [Mini] [restartedMain] com.ashok.MiniApplication                : No active profile set, falling back to 1 default profile: "default"
+2024-11-04T20:13:59.515+05:30  INFO 6404 --- [Mini] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2024-11-04T20:13:59.517+05:30  INFO 6404 --- [Mini] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2024-11-04T20:14:00.450+05:30  INFO 6404 --- [Mini] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-11-04T20:14:00.529+05:30  INFO 6404 --- [Mini] [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 69 ms. Found 4 JPA repository interfaces.
+2024-11-04T20:14:01.334+05:30  INFO 6404 --- [Mini] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-11-04T20:14:01.355+05:30  INFO 6404 --- [Mini] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-11-04T20:14:01.356+05:30  INFO 6404 --- [Mini] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.30]
+2024-11-04T20:14:01.433+05:30  INFO 6404 --- [Mini] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-11-04T20:14:01.433+05:30  INFO 6404 --- [Mini] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1914 ms
+2024-11-04T20:14:01.475+05:30  INFO 6404 --- [Mini] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-11-04T20:14:02.015+05:30  INFO 6404 --- [Mini] [restartedMain] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@68f2c1d1
+2024-11-04T20:14:02.018+05:30  INFO 6404 --- [Mini] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-11-04T20:14:02.028+05:30  INFO 6404 --- [Mini] [restartedMain] o.s.b.a.h2.H2ConsoleAutoConfiguration    : H2 console available at '/h2-console'. Database available at 'jdbc:mysql://localhost:3306/mini2'
+2024-11-04T20:14:02.198+05:30  INFO 6404 --- [Mini] [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-11-04T20:14:02.300+05:30  INFO 6404 --- [Mini] [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.5.3.Final
+2024-11-04T20:14:02.353+05:30  INFO 6404 --- [Mini] [restartedMain] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-11-04T20:14:02.769+05:30  INFO 6404 --- [Mini] [restartedMain] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-11-04T20:14:03.985+05:30  INFO 6404 --- [Mini] [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-11-04T20:14:04.189+05:30  INFO 6404 --- [Mini] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-11-04T20:14:04.689+05:30  WARN 6404 --- [Mini] [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-11-04T20:14:04.817+05:30  WARN 6404 --- [Mini] [restartedMain] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userController' method 
+com.ashok.controller.UserController#getUsers(int, int, String, String)
+to {GET [/user]}: There is already 'userController' bean method
+com.ashok.controller.UserController#getAllUser() mapped.
+2024-11-04T20:14:04.818+05:30  INFO 6404 --- [Mini] [restartedMain] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-11-04T20:14:04.825+05:30  INFO 6404 --- [Mini] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-11-04T20:14:04.837+05:30  INFO 6404 --- [Mini] [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-11-04T20:14:04.840+05:30  INFO 6404 --- [Mini] [restartedMain] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2024-11-04T20:14:04.852+05:30  INFO 6404 --- [Mini] [restartedMain] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2024-11-04T20:14:04.889+05:30 ERROR 6404 --- [Mini] [restartedMain] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'requestMappingHandlerMapping' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/WebMvcAutoConfiguration$EnableWebMvcConfiguration.class]: Ambiguous mapping. Cannot map 'userController' method 
+com.ashok.controller.UserController#getUsers(int, int, String, String)
+to {GET [/user]}: There is already 'userController' bean method
+com.ashok.controller.UserController#getAllUser() mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1806) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:522) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:337) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:335) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:200) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:975) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:971) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:625) ~[spring-context-6.1.13.jar:6.1.13]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:754) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:456) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:335) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1363) ~[spring-boot-3.3.4.jar:3.3.4]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1352) ~[spring-boot-3.3.4.jar:3.3.4]
+	at com.ashok.MiniApplication.main(MiniApplication.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50) ~[spring-boot-devtools-3.3.4.jar:3.3.4]
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+com.ashok.controller.UserController#getUsers(int, int, String, String)
+to {GET [/user]}: There is already 'userController' bean method
+com.ashok.controller.UserController#getAllUser() mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:674) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:636) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:331) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:508) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:84) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$2(AbstractHandlerMethodMapping.java:298) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:721) ~[na:na]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:296) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:265) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:224) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:212) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:239) ~[spring-webmvc-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853) ~[spring-beans-6.1.13.jar:6.1.13]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1802) ~[spring-beans-6.1.13.jar:6.1.13]
+	... 21 common frames omitted
+
